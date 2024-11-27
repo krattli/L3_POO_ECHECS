@@ -9,7 +9,12 @@ public class Echiquier {
 
     public Echiquier(Player joueur1, Player joueur2, Player joueur3, Player joueur4) {
         plateau = new Piece[TAILLE][TAILLE];
+        Player[] players = new Player[]{joueur1, joueur2, joueur3, joueur4};
         //maintenant place toutes les pièces sur l'échiquier avec leurs appartennance et tout
+    }
+    
+    public void initialiser(Echiquier plateau, Player[] players) {
+        
     }
 
     public void jouerCoup(Coup coup) {

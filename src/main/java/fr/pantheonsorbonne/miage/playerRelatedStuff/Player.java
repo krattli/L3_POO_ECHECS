@@ -1,24 +1,30 @@
 package fr.pantheonsorbonne.miage.playerRelatedStuff;
 
 import java.util.ArrayList;
+
+import fr.pantheonsorbonne.miage.enums.Color;
 import fr.pantheonsorbonne.miage.game.Coup;
 import fr.pantheonsorbonne.miage.game.Piece;
 
 public abstract class Player{
     private final String nom;
     private int points;
-    public Player (String nom){
-        this.nom=nom;
-        this.points=0;
-    } 
-    public void addPoints(int points){
-        this.points+=points;
+    private Color color;
+    public Player (String nom) {
+        this.nom = nom;
+        this.points = 0;
     }
     public String getNom(){
         return this.nom;
     }
     public int getPoints(){
         return this.points;
+    }
+    public void setColor (Color color){
+        this.color = color;
+    }
+    public void addPoints(int points){
+        this.points+=points;
     }
 
     //Cette méthode va me faire chier je pense... surtout pour le smartPlayer :/
