@@ -1,7 +1,7 @@
 package fr.pantheonsorbonne.miage.game.Pieces;
 
 import fr.pantheonsorbonne.miage.game.Piece;
-import fr.pantheonsorbonne.miage.game.Player;
+import fr.pantheonsorbonne.miage.playerRelatedStuff.Player;
 import fr.pantheonsorbonne.miage.game.Case;
 import fr.pantheonsorbonne.miage.game.Coup;
 import java.util.ArrayList;
@@ -16,6 +16,6 @@ public class Roi extends Piece {
     }
 
     public Boolean isTheMoveLegal() {
-        return null;
+        return false;
     }
 }
