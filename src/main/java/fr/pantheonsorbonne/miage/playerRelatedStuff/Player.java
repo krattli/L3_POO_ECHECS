@@ -27,7 +27,6 @@ public abstract class Player{
         this.points+=points;
     }
 
-    //Cette méthode va me faire chier je pense... surtout pour le smartPlayer :/
     public abstract Coup getNextCoup();
 
     public ArrayList<Coup> getAllPossibleMoves(){
