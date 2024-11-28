@@ -37,4 +37,9 @@ public class PlayerBot extends Player{
         //Implémenter
         return allPlayerPieces;
     }
+
+    public static void main(String[] args){
+        Player j1 = new PlayerBot("raphael");
+        Coup c = j1.getNextCoup();
+    }
 }
